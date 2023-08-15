@@ -15,5 +15,11 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 ### Wiring without breadboard
 | L298N  | Pi4 |
 | ------------- | ------------- |
-| Content Cell  | GPIO25  |
-| Content Cell  | Content Cell  |
+| ENA  | GPIO25 |
+| IN1  | GPIO4 |
+| IN2  | GPIO17 |
+| IN3  | GPIO27 |
+| IN4  | GPIO23 |
+| ENB  | GPIO22 |
+| GND  | Pin 6 + 12V Power Connector (Soldered) |
+| +12V  | 12V Power Connector |
