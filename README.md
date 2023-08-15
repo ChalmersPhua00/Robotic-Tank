@@ -75,3 +75,5 @@ sudo python assembly.py
 ```
 
 ## Demo
+https://github.com/ChalmersPhua00/Raspberry-Pi-4-Robotic-Tank/assets/107158272/74b46030-3c3f-4c41-8ee4-64f7fdbf14fe
+
