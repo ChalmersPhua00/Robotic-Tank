@@ -1,5 +1,5 @@
 # Raspberry-Pi-4-Robotic-Tank
-A remote controlled robotic car with 180° rotation camera using SSH and VNC via Rasberry Pi 4.
+A remote controlled robotic car with 180° rotation camera using SSH and VNC via Raspberry Pi 4.
 
 ## Items Required
 * [Devastator Tank Mobile Robot Platform](https://www.amazon.com/dp/B014L1CF1K/ref=twister_B07YKSF8N7?_encoding=UTF8&th=1)
