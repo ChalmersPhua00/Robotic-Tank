@@ -35,14 +35,25 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 Open terminal on Raspberry Pi 4
 
 ### Dependencies
+Start
 ```
-code blocks for commands
+sudo apt update
+sudo apt upgrade
+```
+OpenCV Installation
+```
+sudo apt install python3-opencv
+```
+Control Libraries Installation
+```
+sudo apt-get install libncurses5-dev libncursesw5-dev
+sudo pip install RPi.GPIO
 ```
 
-### Installing
+### Installing Program
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* assembly.py
+** Any modifications needed to be made to files/folders
 
 ### Executing program
 
