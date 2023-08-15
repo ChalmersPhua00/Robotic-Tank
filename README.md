@@ -56,15 +56,20 @@ assembly.py
 * Arrow keys (left, right, up) to tilt camera
 
 ### Executing program
-- On Pi's terminal enter "sudo raspi-config", then go to Interfacing Options to enable camera, SSH, and VNC.
-- Make sure both computer and pi are connected to the same network.
+* On Pi's terminal enter "sudo raspi-config", then go to Interfacing Options to enable camera, SSH, and VNC.
+* Make sure both computer and pi are connected to the same network.
+* Use command "libcamera-hello -t 0" to check if camera is working.
 
 #### SSH (without camera)
-1. Make sure both computer and pi are connected to the same network
-2. Open computer's terminal and enter "ssh <username>@<pi's IP address>"
-3. Use personal Pi account username and password to connect
+1. Open computer's terminal and enter "ssh <username>@<pi's IP address>"
+2. Use personal Pi account username and password to connect
 
 #### VNC (with camera)
-1. Make sure both computer and pi are connected to the same network
-2. Open computer's terminal and enter "ssh <username>@<pi's IP address>"
-3. Use personal Pi account username and password to connect
+1. Install Real VNC Viewer on computer
+2. Insert Pi's IP address to connect and navigate to Pi's terminal
+
+On the directory where assembly.py is located:
+```
+sudo pigpiod
+sudo python assembly.py
+```
