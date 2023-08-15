@@ -8,3 +8,6 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 * [Compact Battery Pack](https://www.amazon.com/EnergyQC-Portable-Ultra-Compact-Compatible-More-Black/dp/B0B12721V3/ref=sr_1_15?hvadid=174280170623&hvdev=c&hvlocphy=9021712&hvnetw=g&hvqmt=e&hvrand=5657593413140322175&hvtargid=kwd-1670787748&hydadcr=24659_9648993&keywords=usb%2Bbattery%2Bpack&qid=1691595030&sr=8-15&th=1)
 * Rasberry Pi 4
 * Servo Motor
+
+## Wiring
+<img width="1049" alt="Screenshot 2023-08-15 at 11 13 35 AM" src="https://github.com/ChalmersPhua00/Raspberry-Pi-4-Robotic-Tank/assets/107158272/210f5ba8-1a1e-4f4a-b8df-810a26f585cf">
