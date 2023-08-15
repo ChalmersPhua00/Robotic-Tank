@@ -51,11 +51,10 @@ sudo pip install RPi.GPIO
 ```
 
 ### Installing Program
-
-* assembly.py
-** Any modifications needed to be made to files/folders
+assembly.py
+* WASD to move tank
+* Arrow keys (left, right, up) to tilt camera
 
 ### Executing program
-
-* How to run the program
-* Step-by-step bullets
+#### SSH (without camera)
+#### VNC (with camera)
