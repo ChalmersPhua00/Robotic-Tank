@@ -30,3 +30,21 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 | ENB  | GPIO22 |
 | GND  | Pin 6 + 12V Power Connector (Soldered) |
 | +12V  | 12V Power Connector |
+
+## Getting Started
+Open terminal on Raspberry Pi 4
+
+### Dependencies
+```
+code blocks for commands
+```
+
+### Installing
+
+* How/where to download your program
+* Any modifications needed to be made to files/folders
+
+### Executing program
+
+* How to run the program
+* Step-by-step bullets
