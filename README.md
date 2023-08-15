@@ -13,7 +13,7 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 <img width="1049" alt="Screenshot 2023-08-15 at 11 13 35 AM" src="https://github.com/ChalmersPhua00/Raspberry-Pi-4-Robotic-Tank/assets/107158272/210f5ba8-1a1e-4f4a-b8df-810a26f585cf">
 
 ### Wiring without breadboard
-| First Header  | Second Header |
+| L298N  | Pi4 |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
+| Content Cell  | GPIO25  |
 | Content Cell  | Content Cell  |
