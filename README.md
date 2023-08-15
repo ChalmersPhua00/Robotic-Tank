@@ -73,3 +73,5 @@ On the directory where assembly.py is located:
 sudo pigpiod
 sudo python assembly.py
 ```
+
+## Demo
