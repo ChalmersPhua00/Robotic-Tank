@@ -51,9 +51,13 @@ sudo pip install RPi.GPIO
 ```
 
 ### Installing Program
-assembly.py
+rctank_manual.py
 * WASD to move tank
-* Arrow keys (left, right, up) to tilt camera
+* Arrow keys (left, right, up, down) to tilt camera
+
+rctank_auto.py
+* Camera mount uses a Haar Cascade classifier to track faces
+* Motor moves forward when the face detected is below a certain size
 
 ### Executing program
 * On Pi's terminal enter "sudo raspi-config", then go to Interfacing Options to enable camera, SSH, and VNC.
@@ -71,7 +75,7 @@ assembly.py
 On the directory where assembly.py is located:
 ```
 sudo pigpiod
-sudo python assembly.py
+sudo python rctank_manual.py
 ```
 
 ## Demo
