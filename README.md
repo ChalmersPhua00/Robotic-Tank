@@ -1,4 +1,4 @@
-# Raspberry-Pi-4-Robotic-Tank
+# Robotic-Tank
 A remote controlled robotic car with 180° rotation camera using SSH and VNC via Raspberry Pi 4.
 
 ## Items Required
