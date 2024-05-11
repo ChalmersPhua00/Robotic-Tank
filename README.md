@@ -72,7 +72,7 @@ rctank_auto.py
 1. Install Real VNC Viewer on computer
 2. Insert Pi's IP address to connect and navigate to Pi's terminal
 
-On the directory where assembly.py is located:
+On the directory where the .py is located:
 ```
 sudo pigpiod
 sudo python rctank_manual.py
