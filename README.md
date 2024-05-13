@@ -51,11 +51,11 @@ sudo pip install RPi.GPIO
 ```
 
 ### Installing Program
-rctank_manual.py
+rc_manual.py
 * WASD to move tank
 * Arrow keys (left, right, up, down) to tilt camera
 
-rctank_auto.py
+rc_auto.py
 * Camera mount uses a Haar Cascade classifier to track faces
 * Motor moves forward when the face detected is below a certain size
 
@@ -63,6 +63,7 @@ rctank_auto.py
 * On Pi's terminal enter "sudo raspi-config", then go to Interfacing Options to enable camera, SSH, and VNC.
 * Make sure both computer and pi are connected to the same network.
 * Use command "libcamera-hello -t 0" to check if camera is working.
+* Camera inversion for smoother movement is countered by setting camera.vflip = True in the program.
 
 #### SSH (without camera)
 1. Open computer's terminal and enter "ssh <username>@<pi's IP address>"
