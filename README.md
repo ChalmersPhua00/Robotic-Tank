@@ -76,5 +76,5 @@ rc_auto.py
 On the directory where the .py is located:
 ```
 sudo pigpiod
-sudo python rctank_manual.py
+sudo python rc_manual.py
 ```
