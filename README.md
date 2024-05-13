@@ -78,8 +78,3 @@ On the directory where the .py is located:
 sudo pigpiod
 sudo python rctank_manual.py
 ```
-
-## Demo
-https://github.com/ChalmersPhua00/Raspberry-Pi-4-Robotic-Tank/assets/107158272/7ddf9efc-3776-4e9b-900c-5fb535667efc
-
-https://github.com/ChalmersPhua00/Raspberry-Pi-4-Robotic-Tank/assets/107158272/3d84a107-c25c-4c3d-a71a-4a38f4a966cb
