@@ -3,15 +3,15 @@ import RPi.GPIO as GPIO
 from gpiozero import Servo
 from gpiozero.pins.pigpio import PiGPIOFactory
 import cv2
-from picamera import PiCamera
-from picamera.array import PiRGBArray
+from picamera2 import Picamera2
 import time
 
-camera = PiCamera()
+camera = Picamera2()
+camera.configure(camera.create_preview_configuration(main={'size': (640, 480)}))
+camera.start()
 camera.vflip = True
 camera.resolution = (640, 480)
 camera.framerate = 30
-raw_capture = PiRGBArray(camera, size=(640, 480))
 time.sleep(2)
 
 GPIO.setmode(GPIO.BOARD)
@@ -42,10 +42,10 @@ curses.halfdelay(1)
 screen.keypad(True)
 
 try:
-    for frame in camera.capture_continuous(raw_capture, format="bgr", use_video_port=True):
-        image = frame.array
-        cv2.imshow("Camera", image)
-        raw_capture.truncate(0)
+    while True:
+        image = camera.capture_array()
+        cv2.imshow('Camera', image)
+        ret, buffer = cv2.imencode('.jpg', image)
         char = screen.getch()
         if char == ord('q') or cv2.waitKey(1) & 0xFF == ord('q'):
             break
