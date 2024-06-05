@@ -37,17 +37,18 @@ Open terminal on Raspberry Pi 4
 ### Dependencies
 Start
 ```
-sudo apt update
-sudo apt upgrade
-```
-OpenCV Installation
-```
-sudo apt install python3-opencv
-```
-Control Libraries Installation
-```
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv41-dev
+sudo apt-get install libxvidcore-dev libx264-dev
+sudo apt-get install libgtk2.0-dev
+sudo apt-get install libatlas-base-dev gfortran
+sudo apt-get install python3-pip
+sudo apt-get install python3-numpy
+sudo apt-get install python3-opencv
+sudo apt-get install python3-picamera2
 sudo apt-get install libncurses5-dev libncursesw5-dev
-sudo pip install RPi.GPIO
+sudo apt-get install python3-RPi.GPIO
 ```
 
 ### Installing Program
@@ -60,7 +61,7 @@ rc_auto.py
 * Motor moves forward when the face detected is below a certain size
 
 ### Executing program
-* On Pi's terminal enter "sudo raspi-config", then go to Interfacing Options to enable camera, SSH, and VNC.
+* On Pi's terminal enter "sudo raspi-config", then go to Interfacing Options to enable SSH and VNC.
 * Make sure both computer and pi are connected to the same network.
 * Use command "libcamera-hello -t 0" to check if camera is working.
 
