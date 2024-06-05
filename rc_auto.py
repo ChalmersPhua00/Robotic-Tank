@@ -2,19 +2,20 @@ import RPi.GPIO as GPIO
 from gpiozero import Servo
 from gpiozero.pins.pigpio import PiGPIOFactory
 import cv2
-from picamera import PiCamera
-from picamera.array import PiRGBArray
-import time
+from picamera2 import Picamera2
+import time, libcamera
 
 factory = PiGPIOFactory()
 servo1 = Servo(13, pin_factory=factory)
 servo2 = Servo(12, pin_factory=factory)
 
-camera = PiCamera()
-camera.vflip = True
+camera = Picamera2()
+config = camera.create_preview_configuration(main={"size": (640, 480)})
+config["transform"] = libcamera.Transform(vflip=1)
+camera.configure(config)
+camera.start()
 camera.resolution = (640, 480)
 camera.framerate = 30
-raw_capture = PiRGBArray(camera, size=(640, 480))
 time.sleep(2)
 
 GPIO.setmode(GPIO.BOARD)
@@ -37,8 +38,10 @@ cap = cv2.VideoCapture(0)
 face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 try:
-    for frame in camera.capture_continuous(raw_capture, format="bgr", use_video_port=True):
-        img = frame.array
+    while True:
+        img = camera.capture_array()
+        cv2.imshow('Camera', img)
+        ret, buffer = cv2.imencode('.jpg', img)
         gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         faces = face_classifier.detectMultiScale(gray_img, scaleFactor=1.1, minNeighbors=1)
         if len(faces) > 0:
@@ -109,7 +112,6 @@ try:
         cv2.imshow('Webcam', img)
         if cv2.waitKey(1) == ord('q'):
             break
-        raw_capture.truncate(0)
 
 finally:
     camera.close()

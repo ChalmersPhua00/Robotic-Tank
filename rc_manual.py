@@ -4,12 +4,13 @@ from gpiozero import Servo
 from gpiozero.pins.pigpio import PiGPIOFactory
 import cv2
 from picamera2 import Picamera2
-import time
+import time, libcamera
 
 camera = Picamera2()
-camera.configure(camera.create_preview_configuration(main={'size': (640, 480)}))
+config = camera.create_preview_configuration(main={"size": (640, 480)})
+config["transform"] = libcamera.Transform(vflip=1)
+camera.configure(config)
 camera.start()
-camera.vflip = True
 camera.resolution = (640, 480)
 camera.framerate = 30
 time.sleep(2)
