@@ -45,6 +45,7 @@ screen.keypad(True)
 try:
     while True:
         image = camera.capture_array()
+        image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
         cv2.imshow('Camera', image)
         ret, buffer = cv2.imencode('.jpg', image)
         char = screen.getch()
