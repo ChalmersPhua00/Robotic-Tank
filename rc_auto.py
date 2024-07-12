@@ -40,6 +40,7 @@ face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 try:
     while True:
         img = camera.capture_array()
+        img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
         cv2.imshow('Camera', img)
         ret, buffer = cv2.imencode('.jpg', img)
         gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
