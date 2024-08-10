@@ -34,23 +34,6 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 ## Getting Started
 Open terminal on Raspberry Pi 4
 
-### Dependencies
-Start
-```
-sudo apt-get update && sudo apt-get upgrade
-sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv41-dev
-sudo apt-get install libxvidcore-dev libx264-dev
-sudo apt-get install libgtk2.0-dev
-sudo apt-get install libatlas-base-dev gfortran
-sudo apt-get install python3-pip
-sudo apt-get install python3-numpy
-sudo apt-get install python3-opencv
-sudo apt-get install python3-picamera2
-sudo apt-get install libncurses5-dev libncursesw5-dev
-sudo apt-get install python3-RPi.GPIO
-```
-
 ### Installing Program
 rc_manual.py
 * WASD to move tank
