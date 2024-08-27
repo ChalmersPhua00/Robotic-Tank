@@ -32,9 +32,7 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 | +12V  | 12V Power Connector |
 
 ## Getting Started
-Open terminal on Raspberry Pi 4
 
-### Installing Program
 rc_manual.py
 * WASD to move tank
 * Arrow keys (left, right, up, down) to tilt camera
@@ -53,7 +51,7 @@ rc_auto.py
 2. Use personal Pi account username and password to connect
 
 #### VNC (with camera)
-1. Install Real VNC Viewer on computer
+1. Install TigerVNC on the host computer
 2. Insert Pi's IP address to connect and navigate to Pi's terminal
 
 On the directory where the .py is located:
