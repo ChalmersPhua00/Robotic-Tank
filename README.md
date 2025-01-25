@@ -33,18 +33,17 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 
 ## Getting Started
 
-rc_manual.py
-* WASD to move tank
+robotic_tank.py
+* WASD to move tank, Z and X to adjust speed
 * Arrow keys (left, right, up, down) to tilt camera
 
-rc_auto.py
-* Camera mount uses a Haar Cascade classifier to track faces
-* Motor moves forward when the face detected is below a certain size
+face_tracking.py
+* Tracks faces using a 2-DOF servo-mounted camera.
+* Uses a Haar Cascade classifier for face detection.
 
 ### Executing program
 * On Pi's terminal enter "sudo raspi-config", then go to Interfacing Options to enable SSH and VNC.
 * Make sure both computer and pi are connected to the same network.
-* Use command "libcamera-hello -t 0" to check if camera is working.
 
 #### SSH (without camera)
 1. Open computer's terminal and enter "ssh <username>@<pi's IP address>"
@@ -57,5 +56,5 @@ rc_auto.py
 On the directory where the .py is located:
 ```
 sudo pigpiod
-sudo python rc_manual.py
+sudo python <FILE>.py
 ```
