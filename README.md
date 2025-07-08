@@ -33,9 +33,9 @@ A remote controlled robotic car with 180° rotation camera using SSH and VNC via
 
 ## Getting Started
 
-robotic_tank.py
-* WASD to move tank, Z and X to adjust speed
-* Arrow keys (left, right, up, down) to tilt camera
+robotankV1/V2.py
+* WASD to move tank, Z and X to adjust speed, SPACE to stop
+* Arrow keys (left, right, up, down) to tilt camera (for V2, repeatedly press them to adjust)
 
 face_tracking.py
 * Tracks faces using a 2-DOF servo-mounted camera.
